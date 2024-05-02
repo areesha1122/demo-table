@@ -6,7 +6,7 @@ export const fetchUsersData = async (
     sorting: string | null
 ) => {
     const usersData = await axios.get(
-        `http://localhost:3000/api/users?pageSize=${pageSize}&currentPage=${currentPage}${
+        `https://main--stellular-sunburst-d2e72b.netlify.app/api/users?pageSize=${pageSize}&currentPage=${currentPage}${
             sorting ? `&sorting=${sorting}` : ''
         }`
     );
